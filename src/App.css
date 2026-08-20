@@ -1,0 +1,49 @@
+.board-container {
+  position: relative;
+  display: inline-block;
+}
+
+.waldo-image {
+  display: block;
+  max-width: 100%;
+  cursor: crosshair; /* Cambia el cursor a una cruz para buscar */
+}
+
+.targeting-menu {
+  position: absolute;
+  /* Ajusta esto para que el menú aparezca al lado del clic */
+  transform: translate(-50%, -50%); 
+  pointer-events: auto;
+}
+
+.targeting-box {
+  width: 40px;
+  height: 40px;
+  border: 2px dashed red;
+  background-color: rgba(255, 0, 0, 0.2);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-options li {
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-options li:hover {
+  background-color: #f0f0f0;
+}
